@@ -3,10 +3,18 @@ body{
     font-size: 14px;
     color: #0a143a; 
 }
-.header{
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
     max-width: 1146px;
     margin: 0 auto;
+}
+.header{
     padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 12px;
 }
 .navbar{
     display: flex;
@@ -68,4 +76,101 @@ body{
 }
 .search__button-text{
     margin-left: 5px;
+}
+.page{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    grid-column-gap: 30px;
+}
+.page-title{
+    margin-bottom: 25px;
+}
+.card__image{
+    border-radius: 10px;
+    width: 264px;
+    height: 178px;
+    object-fit: cover;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    margin-bottom: 20px;
+    max-width: 264px;
+}
+.card:not(:nth-child(3n)){
+    margin-right: 20px;
+}
+.card__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+.card__title{
+    font-size: 16px;
+    line-height: 19px;
+    color: #256EEB;
+}
+.like{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.card__price{
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+    display: block;
+}
+.card__text{
+    font-size: 14px;
+    line-height: 16px;
+    color: #C4C4C4;
+    margin-bottom: 4px;
+}
+.card__link{
+    text-decoration: none;
+}
+.sidebar .page-title{
+    font-size: 18px;
+    line-height: 21px;
+}
+.service{
+    margin-bottom: 25px;
+}
+.service__title{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+.service__text{
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 217px;
+}
+.footer{
+    margin-top: 18px;
+}
+.footer__text{
+    font-size: 14px;
+    line-height: 16px;
+    color: #C4C4C4;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.footer__menu{
+    list-style: none;
+    margin-bottom: 16px;
+}
+.footer__link{
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    margin-bottom: 5px;
 }
